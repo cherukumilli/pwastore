@@ -1,0 +1,27 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+
+<dom-module id="cheruku-view404">
+  <template>
+    <style>
+      :host {
+        display: block;
+
+        padding: 10px 20px;
+      }
+    </style>
+
+    <!--
+      If deploying in a folder replace href="/" with the full path to your site.
+      Such as: href=="http://polymerelements.github.io/polymer-starter-kit"
+    -->
+    Oops you hit a 404. <a href="/">Head back to home.</a>
+  </template>
+
+  <script>
+    class CherukuView404 extends Polymer.Element {
+      static get is() { return 'cheruku-view404'; }
+    }
+
+    window.customElements.define(CherukuView404.is, CherukuView404);
+  </script>
+</dom-module>

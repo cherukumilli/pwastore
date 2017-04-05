@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>cheruku-main</title>
+
+    <script src="../bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+    <script src="../bower_components/web-component-tester/browser.js"></script>
+
+    <!-- Import the element to test -->
+    <link rel="import" href="../src/cheruku-main.html">
+  </head>
+  <body>
+    <test-fixture id="BasicView">
+      <template>
+        <cheruku-main></cheruku-main>
+      </template>
+    </test-fixture>
+
+    <script>
+      suite('cheruku-main tests', function() {
+        test('Number in circle should be *', function() {
+          var cherukuMain = fixture('BasicView');
+          var circle = cherukuMain.shadowRoot.querySelector('.circle');
+          assert.equal(circle.textContent, '*');
+        });
+      });
+    </script>
+  </body>
+</html>

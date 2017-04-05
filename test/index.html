@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>Tests</title>
+
+    <script src="../bower_components/web-component-tester/browser.js"></script>
+  </head>
+  <body>
+    <script>
+      WCT.loadSuites([
+        // Load 'cheruku-main.html' test suite, using native shadow dom
+        'cheruku-main.html?dom=shadow',
+        // Load 'cheruku-main.html' test suite, using shadydom
+        'cheruku-main.html?wc-shadydom=true',
+      ]);
+    </script>
+  </body>
+</html>

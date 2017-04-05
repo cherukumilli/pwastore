@@ -1,0 +1,28 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="shared-styles.html">
+
+<dom-module id="cheruku-main">
+  <template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+
+        padding: 10px;
+      }
+    </style>
+
+    <div class="card">
+      <div class="circle">*</div>
+      <h1>Top Ranked Apps</h1>
+
+    </div>
+  </template>
+
+  <script>
+    class CherukuMain extends Polymer.Element {
+      static get is() { return 'cheruku-main'; }
+    }
+
+    window.customElements.define(CherukuMain.is, CherukuMain);
+  </script>
+</dom-module>
