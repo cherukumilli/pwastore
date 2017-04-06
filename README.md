@@ -1,5 +1,6 @@
 # Cheruku - Progressive Web Appstore for installable apps
 
+Chrome, FireFox
 [![Build Status](https://travis-ci.org/cherukumilli/pwastore.svg?branch=master)](https://travis-ci.org/cherukumilli/pwastore)
 
 [![Build Status](https://saucelabs.com/browser-matrix/cherukumilli.svg)](https://saucelabs.com/beta/builds/a8ebdc39f4474498a096c8aad6a25d69)
