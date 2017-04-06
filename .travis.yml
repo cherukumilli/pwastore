@@ -20,7 +20,7 @@ node_js:
   - '6'
 
 before_script:
-  - npm install -g bower polymer-cli@next
+  - npm install -g bower polymer-cli@next firebase-tools
   - bower install
   - npm run lint
   - polymer build
