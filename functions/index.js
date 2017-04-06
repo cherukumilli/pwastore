@@ -1,4 +1,4 @@
-var functions = require('firebase-functions');
+var functions = require('firebase-functions'); // eslint-disable-line
 
 // // Create and Deploy Your First Cloud Functions
 // // https://firebase.google.com/docs/functions/write-firebase-functions

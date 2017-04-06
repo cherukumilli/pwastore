@@ -1,4 +1,5 @@
-<!-- Instructions: https://github.com/PolymerElements/polymer-starter-kit/CONTRIBUTING.md#filing-issues -->
+<!-- Instructions based on: https://github.com/PolymerElements/polymer-starter-kit/CONTRIBUTING.md#filing-issues -->
+
 ### Description
 <!-- Example: The `paper-foo` element causes the page to turn pink when clicked. -->
 
