@@ -31,3 +31,9 @@ script:
 
 after_success:
   - ./scripts/deploy.sh $TRAVIS_BRANCH
+
+cache:
+  directories:
+  - node_modules
+  - bower_components
+  - $HOME/.nvm
