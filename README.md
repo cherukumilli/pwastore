@@ -1,5 +1,9 @@
 # Cheruku - Progressive Web Appstore for installable apps
 
+[![Build Status](https://travis-ci.org/cherukumilli/pwastore.svg?branch=master)](https://travis-ci.org/cherukumilli/pwastore)
+
+[![Build Status](https://saucelabs.com/browser-matrix/cherukumilli.svg)](https://saucelabs.com/beta/builds/a8ebdc39f4474498a096c8aad6a25d69)
+
 The documentation below is derived from https://github.com/PolymerElements/polymer-starter-kit
 
 Cheruku app uses the PRPL pattern, PRPL in a nutshell (https://github.com/PolymerElements/polymer-starter-kit):
