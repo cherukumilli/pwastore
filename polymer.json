@@ -12,5 +12,16 @@
   ],
   "lint": {
     "rules": ["polymer-2"]
-  }
+  },
+  "builds": [
+    {
+      "name": "unbundled",
+      "bundle": false,
+      "js": { "compile": true, "minify": true },
+      "css": { "minify": true },
+      "html": { "minify": true },
+      "addServiceWorker": true,
+      "insertPrefetchLinks": false
+    }
+  ]
 }

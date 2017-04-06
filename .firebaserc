@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "staging": "staging-cheruku",
+    "prod": "prod-cheruku"    
+  }
+}
