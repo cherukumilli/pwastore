@@ -1,6 +1,9 @@
 language: node_js
+
 sudo: false
+
 dist: trusty
+
 addons:
   firefox: latest
   apt:
@@ -8,10 +11,23 @@ addons:
       - google-chrome
     packages:
       - google-chrome-stable
+  sauce_connect: true
+
+git:
+  depth: 3
+
 node_js:
   - '6'
+
 before_script:
   - npm install -g bower polymer-cli@next
   - bower install
+  - npm run lint
+  - polymer build
+
 script:
-  - xvfb-run npm test
+  - xvfb-run polymer test --expanded -l chrome,firefox
+  - if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then polymer test --expanded --plugin sauce --skip-plugin local; fi
+
+after_success:
+  - ./scripts/deploy.sh $TRAVIS_BRANCH
