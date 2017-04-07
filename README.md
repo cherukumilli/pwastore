@@ -1,5 +1,7 @@
 # Cheruku - Progressive Web Appstore for installable apps
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/cherukumilli/pwastore.svg)](https://greenkeeper.io/)
+
 Chrome, FireFox
 [![Build Status](https://travis-ci.org/cherukumilli/pwastore.svg?branch=master)](https://travis-ci.org/cherukumilli/pwastore)
 
