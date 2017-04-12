@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" prefix="og: http://ogp.me/ns#">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
 
     <title>Cheruku</title>
-    <meta name="description" content="Progressive web appstore for installable apps that includes app ranking and app reviews">
+    <meta name="description" content="Progressive web appstore with curated installable apps that are ranked and reviewed">
 
     <link rel="icon" href="/images/favicon.ico">
 
@@ -24,6 +24,9 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Cheruku">
 
+    <!-- Launch Screen Image for safari on iOS -->
+    <link rel="apple-touch-startup-image" href="/images/manifest/icon-192x192.png">
+
     <!-- Homescreen icons -->
     <link rel="apple-touch-icon" href="/images/manifest/icon-48x48.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/images/manifest/icon-72x72.png">
@@ -35,6 +38,12 @@
     <meta name="msapplication-TileImage" content="/images/manifest/icon-144x144.png">
     <meta name="msapplication-TileColor" content="#3f51b5">
     <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- open graph tags for sharing and discoverability -->
+    <meta property="og:title" content="Cheruku" />
+    <meta property="og:description" content="Progressive web appstore with curated installable apps that are ranked and reviewed" />
+    <meta property="og:url" content="/index.html" />
+    <meta property="og:image" content="/images/cheruku-og-logo-80x150.png" />
 
     <!-- Load and register pre-caching Service Worker -->
     <script>
